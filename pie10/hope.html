@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jordan's Portfolio</title>
+
+		<link rel="stylesheet" href="css/hope.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.menu.js"></script>
+		<script src="js/jquery-ui-1.8.20.custom.min.js"></script>
+	</head>
+        <body>
+        
+
+                <div id='outer_container2' class="outer_container2" >
+			<h1 class="name"> Jordan Max </h1>
+			<h2 class="desc"> Student Game, App & Web Engineer </h2>
+			<a class="menu_button1" href="#" title="Toggle"><span>[All Projects]</span></a>
+			<a class="menu_button2" href="#" title="Toggle"><span>[Web]</span></a>
+			<a class="menu_button3" href="#" title="Toggle"><span>[Mobile]</span></a>
+			<a class="menu_button4" href="#" title="Toggle"><span>[Game]</span></a>
+			<a class="menu_button5" href="#" title="Toggle"><span>[Dry Resume]</span></a>
+			<a class="menu_button6" href="#" title="Toggle"><span>[Language Proficiency Graph]</span></a>
+                
+                <div class="menu_option1">
+                	<div id="filter"> </div>
+                    <div id="firstStar" class="star" data-genre="game" data-topDesc="Game AI Final" data-num="1"><a href="#" ><span>Item</span></a></div> <!-- Game AI Final -->
+                    <div id="secondStar" class="star" data-genre="mobile" data-topDesc="Android Final" data-num="2"><a href="#" ><span>Item</span></a></div> <!-- Android Final -->
+                     <!-- Class Site -->
+                     <div id="thirdStar" class="star" data-genre="web" data-topDesc="AIM2 Final" data-num="8"><a href="#" ><span>Item</span></a></div> <!-- AIM2 Final -->
+                    <div id="fourthStar" class="star" data-genre="game" data-topDesc="Poker I" data-num="4"><a href="#" ><span>Item</span></a></div> <!-- Poker I -->
+                     <!-- JSON/HTTP Request ability -->
+                    <div id="fifthStar" class="star" data-genre="mobile" data-topDesc="iOS Final" data-num="6"><a href="#" ><span>Item</span></a></div> <!-- iOS final -->
+                    <div id="sixthStar" class="star" data-genre="game" data-topDesc="Game AI Midterm" data-num="7"><a href="#" ><span>Item</span></a></div> <!-- Game AI midterm -->
+                    
+                    <div id="seventhStar" class="star" data-genre="game" data-topDesc="Poker II" data-num="9"><a href="#" ><span>Item</span></a></div> <!-- Poker II -->
+                    <div id="eigthStar" class="star" data-genre="web" data-topDesc="Brim project" data-num="10"><a href="#" ><span>Item</span></a></div> <!-- Papas portfolio -->
+                    
+                </div>
+
+		
+			<div class="menu_description">
+				<h2 class="GameAIFinal"> </h2>		
+			</div>
+		<div id="zBlock"> </div>
+
+		<div class="line-separator"></div>
+		
+		<div class="infoCicleWrapper">
+			<img class="circle"> </img>
+		</div>
+		
+		<div class="nav">
+			<ul class="external">
+				<li class="exNav"><a class="Github"> </a></li>
+				<li class="exNav"><a class="LinkedIn"> </a></li>
+				<li class="exNav"><a class="Facebook"> </a></li>
+				<li class="exNav"><a class="Twitter"> </a></li>
+			</ul>
+		</div>
+
+		<div class="graphNav">
+			<div class="navBar"> </div>
+			<ul class="external">
+				<li class="gNav"><a class="CPP" href="#">C++ : 9/10</a></li>
+				<li class="gNav"><a class="ObjC" href="#">ObjectiveC(iOS) : 6/10</a></li>
+				<li class="gNav"><a class="PHP" href="#">PHP : 5/10</a></li>
+				<li class="gNav"><a class="jQuery" href="#">jQuery : 8/10</a></li>
+				<li class="gNav"><a class="Java" href="#">Java : 5/10</a></li>
+				<li class="gNav"><a class="CS" href="#">C# : 8/10</a></li>
+				<li class="gNav"><a class="JavaScript" href="#">JavaScript : 6/10</a></li>
+				<li class="gNav"><a class="Swift" href="#">Swift: 7/10 </a></li>
+				<li class="gNav"><a class="Ruby" href="#">Ruby : 6/10</a></li>
+				<li class="gNav"><a class="Python" href="#">Python : 5/10</a></li>
+			</ul>
+			
+				
+				<img class="CPPSlice"> </img>
+				<img class="ObjCSlice"> </img>
+				<img class="PHPSlice"> </img>
+				<img class="jQuerySlice"> </img>
+				<img class="JavaSlice"> </img>
+				<img class="CSSlice"> </img>
+				<img class="JSSlice"> </img>
+				<img class="SwiftSlice"> </img>
+				<img class="RubySlice"> </img>
+				<img class="PythonSlice"> </img>
+				<!--<img class="graph"> </img>-->
+				<img class="tryout1"> </img>
+				<img class="tryout2"> </img>
+				<img class="tryout3"> </img>
+				
+				<div class="gDesc">
+					<p class="CPPg"> C++ </p>
+					<p class="ObjCg"> Objective-C</p>
+					<p class="PHPg"> PHP </p>
+					<p class="jQueryg"> jQuery </p>
+					<p class="Javag"> Java </p>
+					<p class="CSg"> C# </p>
+					<p class="JSg"> JavaScript </p>
+					<p class="Swiftg"> Swift </p>
+					<p class="Rubyg">  Ruby </p>
+					<p class="Pythong"> Python </p>
+				</div>
+		</div>
+		<script>
+		
+			$.fn.toggleClick = function(){
+				var methods = arguments, // store the passed arguments for future reference
+				count = methods.length; // cache the number of methods 
+
+				//use return this to maintain jQuery chainability
+				return this.each(function(i, item){
+					// for each element you bind to
+					var index = 0; // create a local counter for that element
+					$(item).click(function(){ // bind a click handler to that element
+						return methods[index++ % count].apply(this,arguments); // that when called will apply the 'index'th method to that element
+						// the index % count means that we constrain our iterator between 0 and (count-1)
+					});
+				});
+			};
+			$( document ).ready(function() {
+				/* initials */
+				$('img.circle').hide();
+				$('img.graph').hide();
+				$('.graphNav').hide();
+
+			});
+			
+
+			
+			$('img.tryout1').hover(function() {
+				slideAObjC('p.ObjCg');
+				slideAPHP('p.PHPg');
+				slideRuby('p.jQueryg');
+			
+			},function(){
+				slideObjC('p.ObjCg');
+				slidePHP('p.PHPg');
+				slideARuby('p.jQueryg');
+			});
+			
+			$('img.tryout2').hover(function() {
+				slidePython('p.Javag');
+				slideCS('p.CSg');
+				slideObjC('p.JSg');
+				slidePHP('p.Swiftg');
+			},function(){
+				slideAPython('p.Javag');
+				slideACS('p.CSg');
+				slideAObjC('p.JSg');
+				slideAPHP('p.Swiftg');
+			});
+			
+			$('img.tryout3').hover(function() {
+				slideACPP('p.CPPg');
+				slideAPython('p.Pythong');
+				slideARuby('p.Rubyg');
+			
+			},function(){
+				slideCPP('p.CPPg');
+				slidePython('p.Pythong');
+				slideRuby('p.Rubyg');
+			});
+			
+			$("li.gNav").hover(function() {
+				slideFor(this.children);
+				
+			},function(){
+				slideB(this.children);
+			});
+			/* */
+			
+			/* Generics */
+			function slideFor(ele){
+				
+				$(ele).animate({
+				left: '+=10px'
+				});
+				
+			};
+				
+			function slideB(ele){
+				
+				$(ele).animate({
+				left: '-=10px'
+				});
+			};
+				
+			function slideCPP(ele){
+				
+				$(ele).animate({
+				top: '+=25px',
+				left: '+=5px'
+				});
+				
+			};
+				
+			function slideACPP(ele){
+				
+				$(ele).animate({
+				top: '-=25px',
+				left: '-=5px'
+				});
+			};
+			
+			function slideObjC(ele){
+				
+				$(ele).animate({
+				top: '+=29px',
+				left: '-=12px'
+				});
+				
+			};
+				
+			function slideAObjC(ele){
+				
+				$(ele).animate({
+				top: '-=29px',
+				left: '+=12px'
+				});
+			};
+			
+			function slidePHP(ele){
+				
+				$(ele).animate({
+				top: '+=20px',
+				left: '-=20px'
+				});
+				
+			};
+			
+			function slideAPHP(ele){
+				
+				$(ele).animate({
+				top: '-=20px',
+				left: '+=20px'
+				});
+			};
+			
+			function slideCS(ele){
+				$(ele).animate({
+					top: '+=30px',
+					left: '+=10px'
+				});
+			};
+			
+			function slideACS(ele){
+				$(ele).animate({
+					top: '-=30px',
+					left: '-=10px'
+				});
+			};
+				
+
+			
+			function slideRuby(ele){
+				
+				$(ele).animate({
+				left: '+=30px'
+				});
+				
+			};
+				
+			function slideARuby(ele){
+				
+				$(ele).animate({
+				left: '-=30px'
+				});
+				
+			};
+			
+			function slidePython(ele){
+				
+				$(ele).animate({
+				top: '+=25px',
+				left: '+=25px'
+				});
+				
+			};
+				
+			function slideAPython(ele){
+				
+				$(ele).animate({
+				top: '-=25px',
+				left: '-=25px'
+				});
+			};
+			
+			$("img.tryout1").hover(function() {
+				$("img.tryout2").addClass("offhover");
+				$("img.tryout3").addClass("offhover");
+			
+			}, function(){
+				$("img.tryout2").removeClass("offhover");
+				$("img.tryout3").removeClass("offhover");
+			});
+			
+			$("img.tryout2").hover(function() {
+				$("img.tryout1").addClass("offhover");
+				$("img.tryout3").addClass("offhover");
+			
+			}, function(){
+				$("img.tryout1").removeClass("offhover");
+				$("img.tryout3").removeClass("offhover");
+			});
+			
+			$("img.tryout3").hover(function() {
+				$("img.tryout2").addClass("offhover");
+				$("img.tryout1").addClass("offhover");
+			
+			}, function(){
+				$("img.tryout2").removeClass("offhover");
+				$("img.tryout1").removeClass("offhover");
+			});
+			
+			$('.menu_button5').toggleClick(function(){
+				$('img.circle').show();
+				$('.menu_option1').hide();
+				$('div.graphNav').hide();
+				$('#zBlock').hide();
+			}, function(){
+				$('img.circle').hide();
+			});
+			
+			$('.menu_button6').toggleClick(function(){
+				$('img.graph').show();
+				$('.graphNav').show();
+				$('.menu_option1').hide();
+				$('img.circle').hide();
+				$('#zBlock').hide();
+			}, function(){
+				$('img.graph').hide();
+				$('.graphNav').hide();
+			});
+			/* proficiency nav stuff */
+			$("a.CPP").hover(function() {
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.ObjC").hover(function() {
+				$("div.navBar").addClass("ObjChovered");
+				$("img.graph").addClass("ObjCGHover");
+				
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("ObjChovered");
+				$("img.graph").removeClass("ObjCGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.PHP").hover(function() {
+			
+				$("div.navBar").addClass("PHPhovered");
+				$("img.graph").addClass("PHPGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("PHPhovered");
+				$("img.graph").removeClass("PHPGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.jQuery").hover(function() {
+				$("div.navBar").addClass("jQueryhovered");
+				$("img.graph").addClass("jQueryGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+				$("div.navBar").removeClass("jQueryhovered");
+				$("img.graph").removeClass("jQueryGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.Java").hover(function() {
+			
+				$("div.navBar").addClass("Javahovered");
+				$("img.graph").addClass("JavaGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("Javahovered");
+				$("img.graph").removeClass("JavaGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.CS").hover(function() {
+			
+				$("div.navBar").addClass("CShovered");
+				$("img.graph").addClass("CSGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("CShovered");
+				$("img.graph").removeClass("CSGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.JavaScript").hover(function() {
+			
+				$("div.navBar").addClass("JShovered");
+				$("img.graph").addClass("JSGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("JShovered");
+				$("img.graph").removeClass("JSGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.Swift").hover(function() {
+			
+				$("div.navBar").addClass("Swifthovered");
+				$("img.graph").addClass("SwiftGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("Swifthovered");
+				$("img.graph").removeClass("SwiftGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.Ruby").hover(function() {
+			
+				$("div.navBar").addClass("Rubyhovered");
+				$("img.graph").addClass("RubyGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.PythonSlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("Rubyhovered");
+				$("img.graph").removeClass("RubyGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.PythonSlice').css('z-index', 10);
+			});
+			
+			$("a.Python").hover(function() {
+			
+				$("div.navBar").addClass("Pythonhovered");
+				$("img.graph").addClass("PythonGHover");
+				$('img.CPPSlice').css('z-index', 105);
+				$('img.ObjCSlice').css('z-index', 105);
+				$('img.PHPSlice').css('z-index', 105);
+				$('img.jQuerySlice').css('z-index', 105);
+				$('img.JavaSlice').css('z-index', 105);
+				$('img.CSSlice').css('z-index', 105);
+				$('img.JSSlice').css('z-index', 105);
+				$('img.SwiftSlice').css('z-index', 105);
+				$('img.RubySlice').css('z-index', 105);
+				
+			
+			}, function(){
+			
+				$("div.navBar").removeClass("Pythonhovered");
+				$("img.graph").removeClass("PythonGHover");
+				$('img.CPPSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.ObjCSlice').css('z-index', 10);
+				$('img.PHPSlice').css('z-index', 10);
+				$('img.jQuerySlice').css('z-index', 10);
+				$('img.JavaSlice').css('z-index', 10);
+				$('img.CSSlice').css('z-index', 10);
+				$('img.JSSlice').css('z-index', 10);
+				$('img.SwiftSlice').css('z-index', 10);
+				$('img.RubySlice').css('z-index', 10);
+			});
+			/* Star text and hover stuff */
+			$("#firstStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#secondStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#thirdStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#fourthStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#fifthStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#sixthStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#seventhStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+			$("#eigthStar").hover(function(){
+					
+					$(".GameAIFinal").text($(this).attr("data-topDesc"));
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 1
+	    			}, 500);
+				},function()
+				{
+					$(".GameAIFinal").stop().animate({
+	        		opacity: 0
+	    			}, 500);
+				});
+				
+				
+			function PieMenuInit(){
+				
+				$('#outer_container2').PieMenu2({
+					'starting_angel':$('180').val(),
+					'angel_difference' : $('#diff_angle').val(),
+					'radius':$('#radius').val(),
+				});
+			}
+			$(function() {          
+				$("#submit_button").click(function() {reset(); }); 
+				$( "#outer_container" ).draggable();
+				PieMenuInit();
+				
+			});
+			/* */
+			
+			/* magic the holy grail, the navigation functionality */
+			$('.menu_button1').hover(function () {
+			
+				$('.star[data-genre="game"]').addClass('active');
+				$('.star[data-genre="mobile"]').addClass('active');
+				$('.star[data-genre="web"]').addClass('active');
+			}, function() {
+				$('.star[data-genre="game"]').removeClass('active');
+				$('.star[data-genre="mobile"]').removeClass('active');
+				$('.star[data-genre="web"]').removeClass('active');
+			});
+			
+			$('.menu_button2').hover(function () {
+			
+				$('.star[data-genre="web"]').addClass('active');
+			}, function() {
+				$('.star[data-genre="web"]').removeClass('active');
+			});
+			
+
+			
+			$('.menu_button3').hover(function () {
+			
+				$('.star[data-genre="mobile"]').addClass('active');
+			}, function() {
+				$('.star[data-genre="mobile"]').removeClass('active');
+			});
+
+			$('.menu_button4').hover(function () {
+			
+				$('.star[data-genre="game"]').addClass('active');
+			}, function() {
+				$('.star[data-genre="game"]').removeClass('active');
+			});
+			
+
+			$('.menu_button2').toggleClick(function () {
+				
+				if($('.star[data-genre="web"]').hasClass('notSpecial')){
+					$('.star[data-genre="web"]').addClass('qOpen').addClass('Special');
+					$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}
+					
+				$('.star[data-genre="web"]').addClass("Special").removeClass('notSpecial');
+				$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+
+			}, function(){
+				if($('.star[data-genre="web"]').hasClass('notSpecial')){
+					$('.star[data-genre="web"]').addClass('qOpen').addClass('Special').removeClass('notSpecial');
+					$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}else {
+				$('.star[data-genre="web"]').addClass('please');
+				$('.star[data-genre="game"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.star[data-genre="mobile"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.menu_option1').addClass('inactive').removeClass('active');
+				$('.outer_container2').addClass('inactive').removeClass('active');
+				}
+				
+			});
+			
+			
+			$('.menu_button3').toggleClick(function () {
+				
+				if($('.star[data-genre="mobile"]').hasClass('notSpecial')){
+					$('.star[data-genre="mobile"]').addClass('qOpen').addClass('Special');
+					$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}
+					
+				$('.star[data-genre="mobile"]').addClass("Special").removeClass('notSpecial');
+				$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+
+			}, function(){
+				if($('.star[data-genre="mobile"]').hasClass('notSpecial')){
+					$('.star[data-genre="mobile"]').addClass('qOpen').addClass('Special').removeClass('notSpecial');
+					$('.star[data-genre="game"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}else {
+				$('.star[data-genre="mobile"]').addClass('please');
+				$('.star[data-genre="game"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.star[data-genre="web"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.menu_option1').addClass('inactive').removeClass('active');
+				$('.outer_container2').addClass('inactive').removeClass('active');
+				}
+				
+			});
+			
+			$('.menu_button4').toggleClick(function () {
+				
+				if($('.star[data-genre="game"]').hasClass('notSpecial')){
+					$('.star[data-genre="game"]').addClass('qOpen').addClass('Special');
+					$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}
+					
+				$('.star[data-genre="game"]').addClass("Special").removeClass('notSpecial');
+				$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+
+			}, function(){
+				if($('.star[data-genre="game"]').hasClass('notSpecial')){
+					$('.star[data-genre="game"]').addClass('qOpen').addClass('Special').removeClass('notSpecial');
+					$('.star[data-genre="web"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+					$('.star[data-genre="mobile"]').removeClass("Special").addClass('notSpecial').removeClass('qOpen');
+				}else {
+				$('.star[data-genre="game"]').addClass('please');
+				$('.star[data-genre="web"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.star[data-genre="mobile"]').removeClass("notSpecial").addClass('Special').addClass('please').removeClass('qOpen');
+				$('.menu_option1').addClass('inactive').removeClass('active');
+				$('.outer_container2').addClass('inactive').removeClass('active');
+				}
+				
+			});
+			
+			/* */
+		</script>
+
+
+
+	</body>
+	
+	
+	
+	<!--                    
+	
+
+			/* */
+	
+	
+	
+	<div id="firstStar" class="star" ><a href="#" data-genre="game" data-topDesc="Windows Assignment" data-num="11"><span>Item</span></a></div>
+            <div id="secondStar" class="star" ><a href="#" data-genre="mobile" data-topDesc="Asteroids" data-num="12"><span>Item</span></a></div>
+                    <div id="thirdStar" class="star" ><a href="#" data-genre="web" data-topDesc="Quentin" data-num="13"><span>Item</span></a></div>
+                    <div id="thirdStar" class="star" ><a href="#" data-genre="web" data-topDesc="Class Site" data-num="3"><span>Item</span></a></div>
+                    <div id="fifthStar" class="star" ><a href="#" data-genre="web" data-topDesc="JSON HTTP Request" data-num="5"><span>Item</span></a></div> -->
+	
+	

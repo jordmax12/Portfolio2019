@@ -1,0 +1,1750 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section
+{
+    display:block
+}
+    
+audio,canvas,video
+{
+    display:inline-block;*display:inline;*zoom:1
+}
+
+audio:not([controls])
+{
+    display:none
+}
+
+html{
+    font-size:100%;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%
+}
+
+a:focus
+{
+    outline:thin dotted #333;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px
+}
+/* Text stuff */ 
+a.menu_button1, a.menu_button2, a.menu_button3, a.menu_button4{
+    text-decoration: none;
+    color:	#303030 ;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+a.menu_button5, a.menu_button6
+{
+    text-decoration: none;
+    color:  #303030 ;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+}
+
+a.menu_button1:hover, a.menu_button2:hover, a.menu_button3:hover, a.menu_button4:hover, a.menu_button5:hover, a.menu_button6:hover{
+    color: lightgrey;
+}
+
+h2 {
+  clear: both;
+  margin-top: -100px;
+}
+
+div.menu_description
+{
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	top: 200px;
+}
+
+h1.name
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    position: absolute;
+    top: 150px;
+    left: 1050px;
+    
+}
+
+h2.desc
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6em;
+    position: absolute;
+    top: 350px;
+    left: 1050px;
+}
+
+p.SelectLang
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    position: absolute;
+    top: 10px;
+    left: 445px;
+
+}
+
+h2.GameAIFinal
+{
+	width: 100px;
+	position: absolute;
+	left: 815px;
+	top: 257px;
+	opacity: 0;
+	color: #303030;
+}
+
+
+li.exNav
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 35px;
+}
+
+li.gNav
+{
+    list-style-type: none;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    text-decoration: none;
+    
+    width: 150px;
+}
+
+li.gNav:hover
+{
+	width: 200px;
+}
+
+
+a.CPP, a.CS, a.ObjC, a.Java, a.JavaScript, a.Python, a.Ruby, a.PHP, a.jQuery, a.Swift
+{
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    height: 32px;
+}
+
+a.CPP:hover, a.CS:hover, a.ObjC:hover, a.Java:hover, a.JavaScript:hover, a.Python:hover, a.Ruby:hover, a.PHP:hover, a.jQuery:hover, a.Swift:hover
+{
+    color: #999999;
+}
+
+a.ObjC
+{
+	width: 200px;
+}
+
+
+.hide-text
+{
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0
+}
+/******************************
+ Text stuff */
+
+/******************************
+ Image Stuff */
+
+div.navBar
+{
+	background-image: url('../img/navBar.png');
+	height: 295px;
+	width: 5px;
+	position: fixed;
+	top: 210px;
+	left: 233px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+div.CPPhovered
+{
+	background-image: url('../img/CPPHoverNav.png');
+}
+
+div.ObjChovered
+{
+	background-image: url('../img/ObjCHoverNav.png');
+}
+
+div.PHPhovered
+{
+	background-image: url('../img/PHPHoverNav.png');
+}
+
+div.jQueryhovered
+{
+	background-image: url('../img/jQueryHoverNav.png');
+}
+
+div.Javahovered
+{
+	background-image: url('../img/JavaHoverNav.png');
+}
+
+div.CShovered
+{
+	background-image: url('../img/CSHoverNav.png');
+}
+
+div.JShovered
+{
+	background-image: url('../img/JavaScriptHoverNav.png');
+}
+
+div.Swifthovered
+{
+	background-image: url('../img/SwiftHoverNav.png');
+}
+
+div.Rubyhovered
+{
+	background-image: url('../img/RubyHoverNav.png');
+}
+
+div.Pythonhovered
+{
+	background-image: url('../img/PythonHoverNav.png');
+}
+
+img.circle
+{
+	background-image: url('../img/DryResume2.png');
+	height: 500px;
+	width: 500px;
+	position: fixed;
+	top: 175px;
+	left: 378px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+/*+++++++++
+******************************** graph trials */
+
+img.CPPSlice
+{
+	background-image: url('../img/CPPSliceHover.png');
+	height: 258px;
+	width: 162px;
+	position: fixed;
+	top: 128px;
+	left: 502px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.ObjCSlice
+{
+	background-image: url('../img/ObjCSliceHover.png');
+	height: 169px;
+	width: 97px;
+	position: fixed;
+	top: 205.5px;
+	left: 656.9999999999px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.PHPSlice
+{
+	background-image: url('../img/PHPSliceHover.png');
+	height: 105px;
+	width: 122px;
+	position: fixed;
+	top: 267px;
+	left: 656px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.jQuerySlice
+{
+	background-image: url('../img/jQuerySliceHover.png');
+	height: 149px;
+	width: 229px;
+	position: fixed;
+	top: 298px;
+	left: 656px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+img.JavaSlice
+{
+	background-image: url('../img/JavaSliceHover.png');
+	height: 108px;
+	width: 122px;
+	position: fixed;
+	top: 369px;
+	left: 655px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.CSSlice
+{
+	background-image: url('../img/CSSliceHover.png');
+	height: 261px;
+	width: 152px;
+	position: fixed;
+	top: 369px;
+	left: 656px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.JSSlice
+{
+	background-image: url('../img/JSSliceHover.png');
+	height: 173px;
+	width: 111px;
+	position: fixed;
+	top: 369px;
+	left: 554px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.SwiftSlice
+{
+	background-image: url('../img/SwiftSliceHover.png');
+	height: 173px;
+	width: 215px;
+	position: fixed;
+	top: 369px;
+	left: 450px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+img.RubySlice
+{
+	background-image: url('../img/RubySliceHover.png');
+	height: 125px;
+	width: 215px;
+	position: fixed;
+	top: 305px;
+	left: 462px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+
+img.PythonSlice
+{
+	background-image: url('../img/PythonSliceHover.png');
+	height: 125px;
+	width: 149px;
+	position: fixed;
+	top: 249px;
+	left: 511px;
+	z-index: 100;
+	background-repeat: no-repeat;
+}
+
+img.tryout1
+{
+	background-image: url('../img/tryout1.png');
+	height: 236px;
+	width: 229px;
+	position: fixed;
+	top: 207px;
+	left: 655px;
+	z-index: 101;
+	background-repeat: no-repeat;
+
+}
+
+
+
+img.tryout2
+{
+	background-image: url('../img/tryout2.png');
+	height: 256px;
+	width: 348px;
+	position: fixed;
+	top: 369px;
+	left: 448px;
+	z-index: 101;
+	background-repeat: no-repeat;
+
+}
+
+img.tryout3
+{
+	background-image: url('../img/tryout3.png');
+	height: 304px;
+	width: 348px;
+	position: fixed;
+	top: 128px;
+	left: 460px;
+	z-index: 100;
+	background-repeat: no-repeat;
+
+}
+
+img.tryout1.offhover
+{
+	background-image: url('../img/tryout1Hover.png');
+}
+
+img.tryout2.offhover
+{
+	background-image: url('../img/tryout2Hover.png');
+}
+
+img.tryout3.offhover
+{
+	background-image: url('../img/tryout3Hover.png');
+}
+/*+++++++++
+******************************** graph trials */
+a.Facebook, a.Github, a.LinkedIn, a.Twitter, a.Facebook:hover, a.Github:hover, a.LinkedIn:hover, a.Twitter:hover
+{
+	z-index: 100;
+	background-repeat: no-repeat;
+	width: 34px;
+	height: 34px;
+	position: fixed;
+	float: left;
+	background-size: 2em;
+	top: 555px;
+	
+}
+
+a.Facebook
+{
+	background-image: url('../img/facebook.png');
+}
+
+a.Github
+{
+	background-image: url('../img/github.png');
+
+}
+
+a.LinkedIn
+{
+	background-image: url('../img/linkedin.png');
+}
+
+a.Twitter
+{
+	background-image: url('../img/twitter.png');
+
+}
+
+a.Facebook:hover
+{
+	background-image: url('../img/facebookhover.png');
+}
+
+a.Github:hover
+{
+	background-image: url('../img/githubhover.png');
+
+}
+
+a.LinkedIn:hover
+{
+	background-image: url('../img/linkedinhover.png');
+
+}
+
+a.Twitter:hover
+{
+	background-image: url('../img/twitterhover.png');
+
+}
+
+.star
+{
+    background-image: url('pic3.png');
+    background-repeat: no-repeat;
+    top: -375px;
+    background-size: 6em;
+
+}
+
+#firstStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#firstStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#firstStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#secondStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#secondStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#secondStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#thirdStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#thirdStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#thirdStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#fourthStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#fourthStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#fourthStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#fifthStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#fifthStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#fifthStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#sixthStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#sixthStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#sixthStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#seventhStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#seventhStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#seventhStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#eigthStar
+{
+    background-image: url('../img/inactiveStar.png');
+    background-repeat: no-repeat;
+}
+
+#eigthStar:hover
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+#eigthStar.active
+{
+    background-image: url('../img/activeStar.png');
+    background-repeat: no-repeat;
+}
+
+/******************************
+ Image Stuff */
+div.graphNav
+{
+    position: fixed;
+    left: 192px;
+	top: 182px;
+}
+
+div.nav
+{
+    position: fixed;
+    left: 980px;
+    top: 521px;
+}
+
+.line-separator
+{
+
+    height:1px;
+    background: none repeat scroll 0% 0% #717171;
+    border-bottom: -1px solid #313030;
+    width: 245px;
+    position: absolute;
+    top: 550px;
+    left: 645px;
+}
+
+.line-separator2
+{
+    height: 1px;
+    background: none repeat scroll 0% 0% #717171;
+    width: 245px;
+    position: absolute;
+    top: 75px;
+    left: 390px;
+}
+
+.menu_option1
+{
+    top:300px;
+    left:525px;
+    position:absolute;
+}
+div #zBlock
+{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    position: absolute;
+    left: 513px;
+    top: 300px;
+    z-index: 99;
+}
+
+p.CPPg, p.ObjCg, p.PHPg, p.jQueryg, p.Javag, p.CSg, p.JSg, p.Swiftg, p.Rubyg, p.Pythong
+    {
+
+    	position: absolute;
+    	top: 0px;
+    	margin-top: 10px;
+    }
+    p.CPPg
+    {
+       	-webkit-transform: rotate(-13deg); 
+		-moz-transform: rotate(-13deg);	
+		transform: rotate(-13deg);
+		top: -45px;
+		left: 371px;
+    }
+    
+    p.ObjCg
+    {
+       	-webkit-transform: rotate(17deg); 
+		-moz-transform: rotate(17deg);	
+		transform: rotate(17deg);
+		top: 30px;
+		left: 465px;
+    }
+    
+    p.PHPg
+    {
+       	-webkit-transform: rotate(53deg); 
+		-moz-transform: rotate(53deg);	
+		transform: rotate(53deg);
+		top: 110px;
+		left: 535px;
+    }
+    
+    p.jQueryg
+    {
+       	-webkit-transform: rotate(89deg); 
+		-moz-transform: rotate(89deg);	
+		transform: rotate(89deg);
+		top: 170px;
+		left: 645px;
+    }
+    
+    p.Javag
+    {
+       	-webkit-transform: rotate(118deg); 
+		-moz-transform: rotate(118deg);	
+		transform: rotate(118deg);
+		top: 222px;
+		left: 533px;
+    }
+    
+    p.CSg
+    {
+       	-webkit-transform: rotate(152deg); 
+		-moz-transform: rotate(152deg);	
+		transform: rotate(152deg);
+		top: 373px;
+		left: 513px;
+    }
+    
+    p.JSg
+    {
+    	-webkit-transform: rotate(195deg); 
+		-moz-transform: rotate(195deg);	
+		transform: rotate(195deg);
+		top: 309px;
+		left: 390px;
+    }
+    
+    p.Swiftg
+    {
+    	-webkit-transform: rotate(229deg); 
+		-moz-transform: rotate(229deg);	
+		transform: rotate(229deg);
+		top: 276px;
+		left: 293px;
+    }
+    
+    p.Rubyg
+    {
+    	-webkit-transform: rotate(-97deg); 
+		-moz-transform: rotate(-97deg);	
+		transform: rotate(-97deg);
+		top: 168px;
+		left: 276px;
+    }
+    
+    p.Pythong
+    {
+    	-webkit-transform: rotate(-56deg); 
+		-moz-transform: rotate(-56deg);	
+		transform: rotate(-56deg);
+		top: 96px;
+		left: 335px;
+    }
+
+
+/*.menu_option1.inactiveDone
+{
+display: none;
+}*/
+
+.menu_option1 li a:hover {
+    /*border: 3px solid red;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4),0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.5) inset;*/
+
+    
+}
+.menu_option1 li.options a.red
+{
+     /*border: 3px solid red;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4), 0px 0px 0px 1px rgba(0, 0, 0, 0.2), 0px 0px 2px 0px rgba(0, 0, 0, 0.5) inset;*/
+}
+
+
+
+.menu_option1 div
+{
+    position:absolute;
+    display:block;
+    top:0;
+    left:0;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -ms-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s
+}
+
+
+
+.menu_option1 div a
+{
+    position:relative;
+    display:block;
+    border-radius:50%;
+    width:120px;
+    height:120px;
+    /*border:3px solid #fff;
+    box-shadow:rgba(0,0,0,.4) 0 0 5px 0,rgba(0,0,0,.2) 0 0 0 1px,inset rgba(0,0,0,.5) 0 0 2px 0;*/
+    text-indent:-99999px;
+    overflow:hidden;
+    /*background:#444*/
+}
+
+
+
+
+
+
+.menu_button1
+{
+    position:absolute;
+
+    left:1050px;
+    top: 300px;
+    height:36px;
+    width:118px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.menu_button2
+{
+    position:absolute;
+
+    left:1050px;
+    top: 350px;
+    height:36px;
+    width:60px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.menu_button3
+{
+    position:absolute;
+
+    left:1050px;
+    top: 400px;
+    height:36px;
+    width:80px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.menu_button4
+{
+    position:absolute;
+
+    left:1050px;
+    top: 450px;
+    height:36px;
+    width:80px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+a.menu_button5
+{
+    position:absolute;
+    left:1050px;
+    top: 500px;
+    width:80px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+a.menu_button6
+{
+    position:absolute;
+    left:1050px;
+    top: 520px;
+    width:180px;
+    overflow:hidden;
+    z-index:9999;
+}
+
+.menu_button1 span
+{
+    display:block;
+    height:36px;
+    width:141px;
+    
+    -webkit-transition:.4s ease;-moz-transition:.4s ease;
+    -ms-transition:.4s ease;
+    -o-transition:.4s ease;
+    transition:.4s ease
+}
+
+a.copyright:hover
+{
+     color: lightgrey;
+}
+
+
+/*MEDIAS*/
+
+@media all and (min-width: 855px) and  (max-width: 1000px) {
+     h1.name
+    {
+		font-size: 2em;
+		left: 645px;
+		top: 195px;
+    }
+    
+    h2.desc
+    {
+		font-size: .7em;
+		left: 645px;
+		top: 365px;
+    }
+    
+    a.menu_button1, a.menu_button2, a.menu_button3, a.menu_button4
+    {
+		left: 645px;
+		font-size: .9em;
+    }
+    
+    a.menu_button5, a.menu_button6
+    {
+		left: 645px;
+    }
+    
+    a.Github, a.Github:hover, a.LinkedIn, a.LinkedIn:hover, a.Facebook, a.Facebook:hover, a.Twitter, a.Twitter:hover
+    {
+    	top: 545px;
+    }
+    
+    a.Github
+    {
+    	left: 645px;
+    }
+    
+    a.LinkedIn
+    {
+    	left: 695px;
+    }
+    
+    a.Facebook
+    {
+    	left: 745px;
+    }
+    
+    a.Twitter
+    {
+    	left: 795px;
+    }
+    
+    a.menu_button1
+    {
+    	top: 300px;
+    }
+    
+    a.menu_button2
+    {
+    	top: 340px;
+    }
+    
+    a.menu_button3
+    {
+    	top: 380px;
+    }
+    
+    a.menu_button4
+    {
+    	top: 420px;
+    }
+    
+    a.menu_button5
+    {
+    	top: 480px;
+    }
+    
+    a.menu_button6
+    {
+    	top: 500px;
+    }
+    
+    .line-separator
+    {
+    	top: 520px;
+    }
+    .star
+    {
+		background-size: 5em;
+    }
+    
+    .menu_option1
+	{
+		top: 283px;
+		left: 265px;
+    }
+    
+    img.tryout1
+	{
+		left: 395px;
+	}
+
+	img.tryout2
+	{
+		left: 188px;
+	}
+
+	img.tryout3
+	{
+		left: 200px;
+	}
+	
+	
+	img.CPPSlice
+	{
+		left: 242px;
+	}
+	
+	
+	img.ObjCSlice
+	{
+		left: 396.9999999999px;
+	}
+	
+	
+	img.PHPSlice
+	{
+		left: 396px;
+	}
+	
+	
+	img.jQuerySlice
+	{
+		left: 396px;
+	}
+	
+	img.JavaSlice
+	{
+		left: 395px;
+	}
+	
+	
+	img.CSSlice
+	{
+		left: 396px;
+	}
+	
+	
+	img.JSSlice
+	{
+		left: 294px;
+	}
+	
+	
+	img.SwiftSlice
+	{
+		left: 190px;
+	}
+	
+	img.RubySlice
+	{
+		left: 202px;
+	}
+	
+	
+	img.PythonSlice
+	{
+		left: 251px;
+	}
+	
+	img.circle
+	{
+		left: 85px;
+		top: 200px;
+	}
+	
+    div#zBlock
+    {
+		top: 273px;
+		left: 245px;
+    }
+    
+    div.graphNav
+    {
+    	left: -6.8px;
+		top: 182px;
+    }
+    
+    div.navBar
+    {
+    	left: 33px;
+    }	
+    
+    h2.GameAIFinal
+    {
+		left: 475px;
+		top: 195px;
+    }
+    
+    .line-separator
+    {
+		left: 645px;
+		width: 190px;
+    }
+    
+    p.CPPg
+	{
+		top: -47px;
+		left: 330px;
+	}
+	
+	p.ObjCg
+	{
+		top: 32px;
+		left: 400px;
+	}
+	
+	p.PHPg
+	{
+		top: 112px;
+		left: 475px;
+	}
+	
+	p.jQueryg
+	{
+		left: 583px;
+	}
+	
+	p.Javag
+	{
+		top: 225px;
+		left: 467px;
+	}
+	
+	p.CSg
+	{
+		top: 369px;
+		left: 465px;
+	}
+	
+	p.JSg
+	{
+		top: 310px;
+		left: 329px;
+	}
+	
+	p.Swiftg
+	{
+		top: 273px;
+		left: 236px;
+	}
+	
+	p.Rubyg
+	{
+		left: 219px;
+	}
+	
+	p.Pythong
+	{
+		top: 95px;
+		left: 285px;
+	}
+}
+/***************************/
+@media all and (min-width: 1000px) and  (max-width: 1200px) {
+     h1.name
+    {
+		font-size: 2.5em;
+		left: 745px;
+		top: 180px;
+    }
+    
+    h2.desc
+    {
+		font-size: .8em;
+		left: 745px;
+		top: 365px;
+    }
+    
+    a.menu_button1, a.menu_button2, a.menu_button3, a.menu_button4
+    {
+		left: 745px;
+    }
+    
+        
+    a.menu_button5, a.menu_button6
+    {
+		left: 745px;
+    }
+    
+    .star
+    {
+		background-size: 5em;
+    }
+    
+    .menu_option1
+    {
+		top: 300px;
+		left: 265px;
+    }
+    
+    div#zBlock
+    {
+		top: 288px;
+		left: 245px;
+    }
+    
+    h2.GameAIFinal
+    {
+		left: 475px;
+		top: 195px;
+    }
+    .line-separator
+    {
+		width: 245px;
+		left: 745px;
+    }
+    
+    
+    
+    li.exNav
+	{
+		padding: 25px;
+	}
+	
+	div.nav 
+	{
+    	left: 680px;
+	}
+	
+	img.circle
+	{
+		left: 150px;
+	}
+	
+	div.navBar
+	{
+		left: 91px;
+	}
+	
+	div.graphNav
+	{
+		left: 50px;
+	}
+	img.tryout1
+	{
+		left: 563px;
+	}
+	
+	img.tryout2
+	{
+		left: 356px;
+	}
+	
+	img.tryout3
+	{
+		left: 368px;
+	}
+	
+	img.CPPSlice
+	{
+		left: 310px;
+	}
+	
+	img.ObjCSlice
+	{
+		left: 465px;
+	}
+	
+	img.PHPSlice
+	{
+		left: 464px;
+	}
+	
+	img.jQuerySlice
+	{
+		left: 464px;
+	}
+	
+	img.JavaSlice
+	{
+		left: 463px;
+	}
+	
+	img.CSSlice
+	{
+		left: 464px;
+	}
+	
+	img.JSSlice
+	{
+		left: 362px;
+	}
+	
+	img.SwiftSlice
+	{
+		left: 259px;
+	}
+	
+	img.RubySlice
+	{
+		left: 270px;
+	}
+	
+	img.PythonSlice
+	{
+		left: 319px;
+	}
+	
+	img.tryout1
+	{
+		left: 464px;
+	}
+
+
+
+	img.tryout2
+	{
+		left: 258px;
+	}
+
+	img.tryout3
+	{
+		left: 269px;
+	}
+	
+	a.Facebook, a.Github, a.LinkedIn, a.Twitter, a.Facebook:hover, a.Github:hover, a.LinkedIn:hover, a.Twitter:hover 
+    {
+    	background-size: 1.5em auto;
+	}
+	
+	p.CPPg
+	{
+		top: -47px;
+		left: 330px;
+	}
+	
+	p.ObjCg
+	{
+		top: 32px;
+		left: 415px;
+	}
+	
+	p.PHPg
+	{
+		top: 112px;
+		left: 489px;
+	}
+	
+	p.jQueryg
+	{
+		left: 595px;
+	}
+	
+	p.Javag
+	{
+		top: 220px;
+		left: 487px;
+	}
+	
+	p.CSg
+	{
+		top: 374px;
+		left: 470px;
+	}
+	
+	p.JSg
+	{
+		top: 310px;
+		left: 339px;
+	}
+	
+	p.Swiftg
+	{
+		top: 273px;
+		left: 246px;
+	}
+	
+	p.Rubyg
+	{
+		left: 229px;
+	}
+	
+	p.Pythong
+	{
+		top: 97px;
+		left: 292px;
+	}
+
+}
+
+/* p.CPPg..etc ONLY WORKS FROM THIS POINT FORWARD, NEED TO FIX FOR SMALLER SCALES */
+@media all and (min-width: 1200px) and  (max-width: 1389px) {
+     h1.name
+    {
+		font-size: 2.5em;
+		left: 845px;
+		top: 180px;
+    }
+    
+    
+    
+    
+    h2.desc
+    {
+		font-size: 1em;
+		left: 845px;
+		top: 365px;
+    }
+    
+    a.menu_button1, a.menu_button2, a.menu_button3, a.menu_button4
+    {
+		left: 845px;
+    }
+    
+    a.menu_button5, a.menu_button6
+    {
+		left: 845px;
+    }
+    
+    .star
+    {
+		background-size: 5em;
+    }
+    
+    .menu_option1
+    {
+		top: 300px;
+		left: 365px;
+    }
+    
+    div#zBlock{
+		top: 288px;
+		left: 345px;
+    }
+    
+    h2.GameAIFinal
+    {
+		left: 575px;
+		top: 195px;
+    }
+    
+    .line-separator
+    {
+		left: 840px;
+    }
+    
+    a.Facebook, a.Github, a.LinkedIn, a.Twitter, a.Facebook:hover, a.Github:hover, a.LinkedIn:hover, a.Twitter:hover 
+    {
+    	background-size: 1.6em auto;
+	}
+	
+	li.exNav
+	{
+		padding: 25px;
+	}
+	
+	div.nav 
+	{
+    	left: 775px;
+	}
+	
+	img.circle
+	{
+		left: 150px;
+	}
+	
+	div.navBar
+	{
+		left: 91px;
+	}
+	
+	div.graphNav
+	{
+		left: 50px;
+	}
+	img.tryout1
+	{
+		left: 513px;
+	}
+	
+	img.tryout2
+	{
+		left: 306px;
+	}
+	
+	img.tryout3
+	{
+		left: 318px;
+	}
+	
+	img.CPPSlice
+	{
+		left: 360px;
+	}
+	
+	img.ObjCSlice
+	{
+		left: 515px;
+	}
+	
+	img.PHPSlice
+	{
+		left: 514px;
+	}
+	
+	img.jQuerySlice
+	{
+		left: 514px;
+	}
+	
+	img.JavaSlice
+	{
+		left: 513px;
+	}
+	
+	img.CSSlice
+	{
+		left: 514px;
+	}
+	
+	img.JSSlice
+	{
+		left: 412px;
+	}
+	
+	img.SwiftSlice
+	{
+		left: 308px;
+	}
+	
+	img.RubySlice
+	{
+		left: 320px;
+	}
+	
+	img.PythonSlice
+	{
+		left: 369px;
+	}
+
+}
+/**/
+@media all and (min-width: 1390px) and  (max-width: 1400px) {
+    h1.name
+    {
+		font-size: 2.5em;
+		left: 1066px;
+    }
+    
+    h2.desc
+    {
+		font-size: 1em;
+		left: 1066px;
+    }
+    
+    a.menu_button1, a.menu_button2, a.menu_button3, a.menu_button4
+    {
+		left: 1066px;
+    }
+    
+    a.menu_button5, a.menu_button6
+    {
+		left: 1066px;
+    }
+    
+    .star
+    {
+		background-size: 5em;
+    }
+    
+    .menu_option1
+    {
+		top: 300px;
+    }
+    
+    div#zBlock{
+		top: 288px;
+    }
+    
+    h2.GameAIFinal
+    {
+		left: 730px;
+		top: 195px;
+    }
+    
+    .line-separator
+    {
+		left: 1065px;
+    }
+    
+    a.Facebook, a.Github, a.LinkedIn, a.Twitter, a.Facebook:hover, a.Github:hover, a.LinkedIn:hover, a.Twitter:hover 
+    {
+    	background-size: 1.6em auto;
+	}
+	
+	li.exNav
+	{
+		padding: 25px;
+	}
+	
+	div.nav 
+	{
+    	left: 1000px;
+	}
+	
+
+
+	
+}
+@media all and (min-width: 1400px) and (max-width: 1607px) {
+    h2.desc
+    {
+	font-size: 1em;
+    }
+    .star
+    {
+	background-size: 5em;
+    }
+    .menu_option1
+    {
+	top: 300px;
+    }
+    
+    div#zBlock
+    {
+	top: 288px;
+    }
+    
+    h2.GameAIFinal
+    {
+	left: 730px;
+	top: 240px;
+    }
+    
+    .line-separator
+    {
+	left: 1045px;
+	width: 300px;
+    }
+    
+
+
+    
+}
+
+@media all and (min-width: 1608px) {
+
+	.line-separator
+	{
+	    left: 1050px;
+	    width: 450px;
+	}
+	
+	h2.GameAIFinal
+	{
+	    left: 740px;
+	    top: 210px;
+	}
+
+
+
+}
+
+
+/*
+ .menu_option1 div a span
+{
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:transparent;
+    
+    background-origin:padding-box;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:16px 16px;
+    display:block;
+    width:26px;
+    height:26px;
+    -webkit-transition:.4s ease;
+    -moz-transition:.4s ease;
+    -ms-transition:.4s ease;
+    -o-transition:.4s ease;
+    transition:.4s ease
+}
+
+.btn-rotate span
+{
+    -webkit-transform:rotate(-135deg);
+    -moz-transform:rotate(-135deg);
+    -ms-transform:rotate(-135deg);
+    -o-transform:rotate(-135deg);
+    transform:rotate(-135deg)
+}
+
+.active .menu_option div a
+{
+    -webkit-animation:expand .6s ease 1 backwards;
+    -moz-animation:expand .6s ease 1 backwards;
+    -ms-animation:expand .6s ease 1 backwards;
+    -o-animation:expand .6s ease 1 backwards;
+    animation:expand .6s ease 1 backwards
+}
+
+.active .menu_option1 div a
+{
+    -webkit-animation:expand .6s ease 1 backwards;
+    -moz-animation:expand .6s ease 1 backwards;
+    -ms-animation:expand .6s ease 1 backwards;
+    -o-animation:expand .6s ease 1 backwards;
+    animation:expand .6s ease 1 backwards
+}
+
+@-webkit-keyframes expand
+{
+    0%{ top:0}
+    50%{top:-10px}
+    70%{top:10px}
+    100%{top:0}
+}
+
+@-moz-keyframes expand
+{
+    0%{ top:0}
+    50%{top:-10px}
+    70%{top:10px}
+    100%{top:0}
+}*/

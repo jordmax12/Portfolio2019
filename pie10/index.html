@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pie Menu (like Path Menu) using jquery and CSS3 by Nikesh Hayaran</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/piemenu.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.menu.js"></script>
+		<script src="js/jquery-ui-1.8.20.custom.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class='content'>
+			<h2>Pie Menu (like Path menu ) using jquery and CSS3 </h2>
+			
+			
+				<div class='demo'>
+					<p id='info'>Updated..</p>
+					<div id='outer_container2' class="outer_container2" >
+						<nav class="genreNav">
+							<a class="menu_button1" href="#" title="Toggle"><span>Menu Toggle</span></a>
+							<a class="menu_button2" href="#" title="Toggle"><span>Menu Toggle</span></a>
+							<a class="menu_button3" href="#" title="Toggle"><span>Menu Toggle</span></a>
+						</nav>
+
+						<ul class="menu_option1">
+						  <li class="star" ><a href="#" data-genre="game"><span>Item</span></a></li>
+						  <li class="options" ><a href="#" data-genre="mobile"><span>Item</span></a></li>
+						  <li class="options" ><a href="#" data-genre="web"><span>Item</span></a></li>
+						  <li class="options" ><a href="#" data-genre="mobile"><span>Item</span></a></li>
+						  <li class="options" ><a href="#" data-genre="web"><span>Item</span></a></li>
+						</ul>
+
+					</div>
+					
+					<div id="zBlock">
+					
+					</div>
+
+					<div id='outer_container' class="outer_container" >
+						<a class="menu_button" href="#" title="Toggle"><span>Menu Toggle</span></a>
+						<ul class="menu_option">
+						  <li><a href="#" ><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						</ul>
+						<ul class="menu_option">
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						</ul>
+						<ul class="menu_option">
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						  <li><a href="#"><span>Item</span></a></li>
+						</ul>
+					</div>				
+				</div>
+				<div class='drag'>* Draggable Element</div>
+				<div class='clearfix'></div>
+			</div>
+			<h5>* Please read README.md file for explanation.</h5>
+		</div>
+		<script>
+		$( document ).ready(function() {
+			$(".menu_option1").addClass('inactive');
+		});
+		
+		$('a.menu_button1').hover(function(){
+			$('.menu_option1 li.options a[data-genre="web"]').addClass('red');
+			
+		}, function(){
+			$('.menu_option1 li.options a[data-genre="web"]').removeClass('red');
+			}); //closes hover 1
+		
+		$('a.menu_button2').hover(function(){
+			$('.menu_option1 li.options a[data-genre="game"]').addClass('red');
+			
+		}, function(){
+			$('.menu_option1 li.options a[data-genre="game"]').removeClass('red');
+			}); //closes hover 2
+		
+		$('a.menu_button3').hover(function(){
+			$('.menu_option1 li.options a[data-genre="mobile"]').addClass('red');
+			
+		}, function(){
+			$('.menu_option1 li.options a[data-genre="mobile"]').removeClass('red');
+			}); //closes hover 3
+		
+		function PieMenuInit(){		
+			$('#outer_container').PieMenu({
+				'starting_angel':$('#s_angle').val(),
+				'angel_difference' : $('#diff_angle').val(),
+				'radius':$('#radius').val(),
+			});
+			
+			$('#outer_container2').PieMenu2({
+				'starting_angel':$('10').val(),
+				'angel_difference' : $('#diff_angle').val(),
+				'radius':$('#radius').val(),
+			});
+		}
+		$(function() {          
+			$("#submit_button").click(function() {reset(); }); 
+			$( "#outer_container" ).draggable();
+			PieMenuInit();
+			
+		});
+		function reset(){
+			if($(".menu_button").hasClass('btn-rotate'))
+			$(".menu_button").trigger('click');
+			
+			if($(".menu_button1").hasClass('btn-rotate'))
+			$(".menu_button1").trigger('click');
+			
+			$("#info").fadeIn("slow").fadeOut("slow");
+			PieMenuInit();
+		}
+		</script>
+
+	</body>
+</html>

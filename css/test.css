@@ -1,0 +1,280 @@
+
+*{ 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+html,
+body
+{
+    margin: 0;
+/*  background: #674172;*/
+    background:  #0D1116;
+}
+
+canvas
+{
+    display: block;
+
+    vertical-align: bottom;
+}
+
+#aa_particles
+{
+    z-index: 4;
+
+    height: 100%;
+    height: 100vh;
+
+/*    background: #674172;*/
+    background:  #0D1116;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+.aa_sec
+{
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    right: 0;
+    left: 0;
+
+    margin: 0  auto;
+}
+.aa_txt
+{
+    font: 100 10vh/1 Roboto;
+
+    text-align: center;
+
+    color: #0D1116;
+}
+.aa_inner
+{
+     padding: 1rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #0D1116;
+    
+}
+.aa_of
+{
+   
+
+padding: 0 2rem;
+    
+    background: #ffffff;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+
+.aa_ahmadawais{
+  display: table;
+  width: 100%;
+  vertical-align: bottom;
+  margin: 5rem 0 5rem ;
+  text-align: center;
+  background: #674172;
+  color: #ffffff;
+  font: 100 2vh/2 Roboto;
+  & a{
+    color: darken(#ffffff,20%);
+    text-decoration: none;
+    border-bottom: 1px solid darken(#ffffff,20%);
+  }
+ 
+}
+
+text {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+.slider-header {
+    top: 50px;
+    left: 0px;
+    height: 150px;
+    z-index: 1001;
+    background: #fff;
+    font-size: 12px;   
+}
+
+.slider-header-sub {
+    height: 50px;
+    top: 70px;
+    text-align: center;  
+    width: 100%;
+}
+
+#slider-next, #slider-prev  {
+    color: #0D1116;
+    text-decoration: none;
+}
+
+.ps-slidewrapper > nav > a, .ps-slidewrapper > nav > a:first-child {
+        box-shadow: inset 0 0 0 9999px #fff !important;
+}
+
+.ps-slidewrapper > nav > a:after {
+    border-left: 1px solid #0D1116 !important;
+    border-top: 1px solid #0D1116 !important;
+}
+
+.center-content {
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;  
+    height: 470px !important;
+}
+
+.slide {
+    height: 350px; 
+/*    top: 205px; */
+    padding: 30px;   
+}
+
+@media screen and (max-width: 525px) {
+/*
+ .resumeImage {
+     width: 100% !important;
+    padding-bottom: 5px;
+ }
+*/
+}
+
+@media screen and (min-width: 860px) {
+     #mobilePortfolioNav {
+         display: none;
+     }
+    
+    .hideFromDesktop {
+        display: none;
+    }
+    
+    .resumeItem {
+     width: calc(100% - 60px);
+    }
+/*
+ .slide {
+   top: 205px;   
+ }
+*/
+    
+}
+
+/* Resume */
+.about .profile h1, .main-title h1 {
+    font-family: 'open_sansextrabold',Arial,sans-serif;
+    color: #333333;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.main-title h1 {
+    font-size: 15px;
+}
+.main-title h1 {
+    margin-bottom: 10px;
+}
+
+.bgGreen {
+ background-color: #60d7a9;   
+}
+
+.bgGrey {
+ background-color: #efefef;   
+}
+/* END Resume */
+
+#slider-name {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;  
+    font-size: 3em !important;
+    margin: .67em 0 !important;
+    text-align: center !important;
+}
+
+.slider-header-sub {
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important; 
+    font-size: 1.5em;
+}
+@media screen and (max-width: 860px) {
+/*
+     .slide {
+       top: 0px;   
+     }
+*/
+    .resumeItem {
+        min-height: initial;
+        width: 100% !important;
+        margin-top:5px;
+    }
+    #newserResumeItem {
+/*         height: 175px;   */
+    }
+    
+    #nextcrewResumeItem {
+/*         height: 185px;   */
+    }
+    #jobplannrImg {
+        content:url("../img/portfolio/JobPlannr-small.png");
+    }
+    
+    #nextcrewImg {
+        content:url("../img/portfolio/NextCrew-small.png");
+    }
+    
+    #secondlifeImg {
+        content:url("../img/portfolio/SecondLife-small.png");
+    }
+    
+    #sparkhelpImg {
+        content:url("../img/portfolio/SparkHelp-small.png");
+    }
+    
+    #alwayshiredImg {
+        content:url("../img/portfolio/AlwaysHired-small.png");
+    }
+    
+    #newserImg {
+        content:url("../img/portfolio/Newser-small.png");
+    }
+    .slide-content {
+        margin-top: 0px !important;
+        height: 100% !important;
+    }
+    
+    #slider-name {
+        display: none;
+    }
+    
+    .ps-content a:last-child{
+        margin:10px 0px 0 0 !important;
+        padding: 0px !important;
+    }
+    
+    .stack {
+        display: none;
+    }
+    
+    .slider-header-sub {
+      display: none;   
+    }
+    .slider-header {
+        top: 0px;
+        height: 50px; 
+    }
+    
+    .slider-header-sub {
+        top: 35px;
+        width: 100%;
+        text-align: center;  
+    }
+}
+
