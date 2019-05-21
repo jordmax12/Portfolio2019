@@ -2,21 +2,23 @@ $(document).ready(function() {
 	$('#mailsubmit').on('click', function() {
 			event.preventDefault(); // prevent default submit behaviour
 			// get values from FORM
-			var name = $("input#name").val();
-			var email = $("input#email").val();
-			var phone = $("input#phone").val();
-			var message = $("textarea#message").val();
+			var name = $("#name").val();
+			var email = $("#email").val();
+			var subject = $("#subject").val();
+			var message = $("#message").val();
 			var firstName = name; // For Success/Failure Message
 			// Check for white space in name for Success/Fail message
 			if (firstName.indexOf(' ') >= 0) {
 				firstName = name.split(' ').slice(0, -1).join(' ');
 			}
+
+			console.log(name, subject, email, message)
 			$.ajax({
 				url: "./mail/contact_me.php",
 				type: "POST",
 				data: {
 					name: name,
-					phone: phone,
+					subject: subject,
 					email: email,
 					message: message
 				},
@@ -35,8 +37,8 @@ $(document).ready(function() {
 					//clear all fields
 					$('#contactForm').trigger("reset");
 				},
-				error: function() {
-					console.log('here2');
+				error: function(e) {
+					console.log('here2', e);
 					// Fail message
 					$('#success').html("<div class='alert alert-danger'>");
 					$('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
