@@ -36,7 +36,6 @@ var PageTransitions = (function() {
 			animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
 			onLinkClick : function( el, ev ) {
 				ev.preventDefault();
-                console.log(ev);
 				nextPage( el.data( 'animation' ) );
 			}
 		} );
@@ -103,7 +102,6 @@ var PageTransitions = (function() {
 		var $currPage = $pages.eq( current );
         
         $pages.each(function(page) {
-            console.log($pages[page].id);
            if(typeof $pages[page].id !== 'undefined' && ($pages[page].id == targetName + "Container" || $pages[page].id == "littleJordanCanvas")) {
                //options.showPage = page + 1;
                current = page;
