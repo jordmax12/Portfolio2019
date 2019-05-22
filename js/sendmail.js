@@ -1,6 +1,10 @@
+const isBusy = false;
+
 $(document).ready(function() {
 	$('#mailsubmit').on('click', function() {
 			event.preventDefault(); // prevent default submit behaviour
+			if(isBusy) return;
+			isBusy = true;
 			// get values from FORM
 			var name = $("#name").val();
 			var email = $("#email").val();
@@ -39,6 +43,7 @@ $(document).ready(function() {
 
 					//clear all fields
 					$('#contactForm').trigger("reset");
+					isBusy = false;
 				},
 				error: function(e) {
 					console.log('here2', e);
@@ -56,6 +61,7 @@ $(document).ready(function() {
 					}, 5000)
 					//clear all fields
 					$('#contactForm').trigger("reset");
+					isBusy = false;
 				},
 			});
 	});
